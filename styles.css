@@ -6,6 +6,10 @@
   color: black;
 }
 
+#services, #social, #location {
+  scroll-margin-top: 80px
+}
+
 .navbar {
   height: 80px;
   width: 100%;
@@ -52,10 +56,42 @@
 }
 
 .hamburger-menu {
+  display: none;
   width: 30px;
   margin: auto;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.mobile-menu {
+  display: grid;
+  transition: all 0.25s ease;
+  background-color: white;
+  z-index: 4;
+  height: 50vh;
+  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  top: -50vh;
+  left: 0;
+  position: fixed;
+  box-shadow: 2px -2px 5px black;
+}
+
+.mobile-link-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mobile-link-container > span {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-link-container:nth-child(2), .mobile-link-container:nth-child(4) {
+  background-color: gainsboro;
 }
 
 .hamburger-menu > .bar {
@@ -397,4 +433,18 @@ footer > .thiago > a > i {
   font-size: 3rem;
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    top: 80px;
+  }
 }
