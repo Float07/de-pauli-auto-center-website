@@ -172,22 +172,32 @@ img.us-logo {
   margin-right: auto;
   max-width: 1100px;
   padding: 0px 30px 50px;
-  height: 700px;
+  height: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.6fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr 1fr 0.6fr 1fr;
   grid-template-areas: 
     "header header"
     "service1 service2"
-    "service3 service4";
+    "service3 service4"
+    "header2 header2"
+    "twelve twelve";
 }
 
 .services-header {
   grid-area: header;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+}
+
+.services-header.one {
+  grid-area: header;
+}
+
+.services-header.two {
+  grid-area: header2;
+}
+
+.services-header.two > h1 {
+  font-size: 2.5rem;
 }
 
 .services-header > h1 {
@@ -248,6 +258,18 @@ img.us-logo {
 
 .services-container .service4 {
   grid-area: service4;
+}
+
+.twelve-times {
+  grid-area: twelve;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.twelve-times > img {
+  height: 420px;
 }
 
 .social-container {
