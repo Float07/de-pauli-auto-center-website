@@ -132,13 +132,25 @@
 }
 
 .us-container {
+  padding: 230px 80px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.us-text-container {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  background-color: gainsboro;
-  padding: 240px 80px;
+}
+
+img.us-logo {
+  height: 220px;
 }
 
 .us-container h1 {
@@ -151,8 +163,8 @@
 }
 
 .us-container span {
-  font-size: 1.3rem;
-  text-align: left;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .services-container {
