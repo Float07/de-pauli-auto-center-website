@@ -180,6 +180,7 @@
 }
 
 .us-text-container {
+  min-width: 420px;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -449,5 +450,22 @@ footer > .thiago > a > i {
 
   .mobile-menu.active {
     top: 80px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .us-container {
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .us-logo {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .us-text-container {
+    margin-top: 50px;
   }
 }
