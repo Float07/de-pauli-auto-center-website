@@ -97,9 +97,9 @@
   z-index: 0;
   position: absolute;
   margin-left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-20%);
   display: block;
-  width: auto;
+  width: 100%;
 }
 
 .main-content {
