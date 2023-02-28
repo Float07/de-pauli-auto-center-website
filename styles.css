@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -498,5 +502,39 @@ footer > .thiago > a > i {
 
   footer > span:nth-child(2) {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+
+  .mobile-link-container > span {
+    font-size: 1.7rem;
+  }
+
+  img.us-logo {
+    height: auto;
+    width: 90%;
+  }
+
+  .us-text-container {
+    min-width: 0;
+    width: 90%;
+  }
+
+  .services-container {
+    padding: 0 0 50px;
+  }
+
+  .services-container > div > div {
+      width: 90%;
+      height: 180px;
+  }
+
+  .twelve-times > img {
+    width: 90%;
+    height: auto;
   }
 }
