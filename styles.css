@@ -152,11 +152,13 @@ html {
   height: 100%;
   position: relative;
   z-index: 2;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .main-content > h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bolder;
   display: block;
   width: 100%;
@@ -536,5 +538,13 @@ footer > .thiago > a > i {
   .twelve-times > img {
     width: 90%;
     height: auto;
+  }
+
+  .socials {
+    padding: 10px 0 30px 0;
+  }
+
+  .socials > div {
+    height: 130px;
   }
 }
