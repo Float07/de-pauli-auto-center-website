@@ -1,3 +1,5 @@
+import VanillaTilt from 'vanilla-tilt'
+
 document.querySelector('#year').textContent = new Date().getFullYear()
 
 const navToggle = document.querySelector('#nav-toggle')
@@ -125,4 +127,42 @@ const updateHoursBadge = () => {
 if (hoursBadge) {
   updateHoursBadge()
   setInterval(updateHoursBadge, 60_000)
+}
+
+// Scroll-reveal: fade/slide elements in once as they enter the viewport.
+const revealTargets = document.querySelectorAll(
+  '.card, .contact-card, .about-figure, .about-text, .promo-banner, .map-frame'
+)
+
+revealTargets.forEach((el) => el.classList.add('reveal'))
+
+document.querySelectorAll('.card-grid, .contact-grid').forEach((grid) => {
+  Array.from(grid.children).forEach((child, index) => {
+    child.style.setProperty('--reveal-delay', `${index * 70}ms`)
+  })
+})
+
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible')
+        observer.unobserve(entry.target)
+      }
+    })
+  },
+  { threshold: 0.15 }
+)
+
+revealTargets.forEach((el) => revealObserver.observe(el))
+
+// Subtle hover tilt on service cards.
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+if (!prefersReducedMotion) {
+  VanillaTilt.init(document.querySelectorAll('.card'), {
+    max: 8,
+    speed: 400,
+    scale: 1.03,
+  })
 }
