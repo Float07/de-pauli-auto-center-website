@@ -1,128 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <script src="https://kit.fontawesome.com/5ecc3c2a90.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!-- NAVBAR SECTION -->
-  <nav class="navbar"><nav class="nav-container">
-    <div class="logo-container"><img src="resources/logo.png" alt="Logo"></div>
-    <div class="navbar-menu">
-      <a href="#us">Quem somos?</a>
-      <a href="#services">Serviços</a>
-      <a href="#social">Contato</a>
-      <a href="#location">Localização</a>
-    </div>
-    <div class="hamburger-menu" id="hamburger-menu">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </nav></nav>
-
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-link-container"><span>Quem somos?</span></div>
-    <div class="mobile-link-container"><span>Serviços</span></div>
-    <div class="mobile-link-container"><span>Contato</span></div>
-    <div class="mobile-link-container"><span>Localização</span></div>
-  </div>
-
-  <!-- MAIN SECTION -->
-  <div class="main-container">
-    <img class="main-image" src="resources/main-background.jpg" alt="Background image">
-  </div>
-
-  <!-- US SECTION -->
-  <div class="us-container" id="us">
-    <img src="resources/logo-full.png" alt="Full logo" class="us-logo">
-    <div class="us-text-container">
-      <h1>Quem somos?</h1>
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum egestas nulla, in interdum ante tincidunt vitae. Donec semper commodo sem, et iaculis mi scelerisque ut. Maecenas mollis imperdiet purus, quis sagittis massa scelerisque feugiat. Suspendisse vel purus feugiat massa laoreet hendrerit. Curabitur auctor, enim non semper luctus, augue ligula consequat neque, vel bibendum sapien mi a erat. Mauris ultrices, arcu quis vestibulum mollis, turpis dui vulputate neque, sit amet gravida arcu neque ac massa. Vestibulum nec auctor est.</span>
-    </div>
-  </div>
-
-  <!-- SERVICES SECTION -->
-  <div class="services-container" id="services">
-    <div class="services-header one">
-      <h1>Serviços</h1>
-    </div>
-    <div class="service1">
-      <div>
-        <h3>Lorem Ipsum</h3>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum egestas nulla, in interdum ante tincidunt vitae. Donec semper commodo sem, et iaculis mi scelerisque ut. </span>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="De Pauli Centro Automotivo — manutenção, revisão e cuidado completo para o seu veículo." />
+    <title>De Pauli Centro Automotivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="logo">
+          <img src="/images/logo.png" alt="De Pauli Centro Automotivo" />
+          <span>De Pauli<small>Centro Automotivo</small></span>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="#sobre">Quem somos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+          <a href="#localizacao">Localização</a>
+          <a href="#contato" class="nav-cta">Fale conosco</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </div>
-    <div class="service2">
-      <div>
-        <h3>Lorem Ipsum</h3>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum egestas nulla, in interdum ante tincidunt vitae. Donec semper commodo sem, et iaculis mi scelerisque ut.</span>
-      </div>
-    </div>
-    <div class="service3">
-      <div>
-        <h3>Lorem Ipsum</h3>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum egestas nulla, in interdum ante tincidunt vitae. Donec semper commodo sem, et iaculis mi scelerisque ut.</span>
-      </div>
-    </div>
-    <div class="service4">
-      <div>
-        <h3>Lorem Ipsum</h3>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum egestas nulla, in interdum ante tincidunt vitae. Donec semper commodo sem, et iaculis mi scelerisque ut.</span></div>
-    </div>
-    <div class="services-header two">
-      <h1>Tudo em até 12 vezes sem juros!</h1>
-    </div>
-    <div class="twelve-times">
-      <img src="resources/twelve-times.jpeg" alt="Twelve times">
-    </div>
-  </div>
+    </header>
 
-  <!-- SOCIAL SECTION -->
-  <div class="social-container" id="social">
-    <h1>Entre em contato!</h1>
-    <div class="socials">
-      <div class="store">
-        <h1><i class="fa-solid fa-house"></i></h1>
-        <span>Visite nossa loja!</span>
-      </div>
-      <div class="facebook">
-        <h1><i class="fa-brands fa-facebook"></i></h1>
-        <span>Fale com a gente no Facebook!</span>
-      </div>
-      <div class="whatsapp">
-        <h1><i class="fa-brands fa-square-whatsapp"></i></h1>
-        <span>Fale com a gente no Whatsapp pelo número (xx) xxxx-xxxx!</span>
-      </div>
-      <div class="phone">
-        <h1><i class="fa-solid fa-phone"></i></h1>
-        <span>Nos ligue no número xxxx-xxxx!</span>
-      </div>
-    </div>
-  </div>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media">
+          <img src="/images/main-background.jpg" alt="" aria-hidden="true" />
+        </div>
+        <div class="container hero-inner">
+          <p class="eyebrow">Centro automotivo completo</p>
+          <h1>Seu carro merece cuidado de verdade.</h1>
+          <p class="hero-sub">
+            Manutenção, revisão e reparo com equipe experiente e peças de
+            qualidade. Cuidamos do seu veículo como se fosse nosso.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Agendar visita</a>
+            <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- LOCATION SECTION -->
-  <div class="location-container" id="location">
-    <h1>Localização</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14852.788472752203!2d-47.0030445!3d-21.4607809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7b84bda508b6f%3A0xa7393093d0eb0c9d!2sDe%20Pauli%20Centro%20Automotivo!5e0!3m2!1sen!2sbr!4v1676859434860!5m2!1sen!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+      <section id="sobre" class="about">
+        <div class="container about-inner">
+          <div class="about-figure">
+            <img src="/images/logo-full.png" alt="De Pauli Centro Automotivo" />
+          </div>
+          <div class="about-text">
+            <p class="eyebrow">Quem somos</p>
+            <h2 class="align-left">Tradição e confiança em cada serviço</h2>
+            <p>
+              A De Pauli Centro Automotivo nasceu do compromisso de oferecer um
+              serviço automotivo honesto, transparente e de qualidade. Nossa
+              equipe é formada por profissionais experientes, preparados para
+              cuidar do seu veículo com atenção aos detalhes que fazem
+              diferença.
+            </p>
+            <p>
+              Trabalhamos com equipamentos modernos e peças confiáveis, sempre
+              explicando cada etapa do serviço para que você tenha total
+              clareza sobre o que está sendo feito no seu carro.
+            </p>
+            <ul class="values">
+              <li><strong>Transparência</strong> — orçamento claro, sem surpresas.</li>
+              <li><strong>Experiência</strong> — equipe qualificada e atenta aos detalhes.</li>
+              <li><strong>Compromisso</strong> — seu carro pronto no prazo combinado.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  <!-- FOOTER SECTION -->
-  <footer>
-    <span>2023 | Copyright © De Pauli Centro Automotivo</span>
-    <span>*</span>
-    <div class="thiago">
-      <span>Made with ❤️ by Thiago de Pauli</span><a href="https://github.com/Float07" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-    </div>
-  </footer>
-  <script src="app.js"></script>
-</body>
+      <section id="servicos" class="services">
+        <div class="container">
+          <p class="eyebrow center">O que fazemos</p>
+          <h2>Nossos serviços</h2>
+          <p class="section-sub">Cuidado completo para o seu veículo, de ponta a ponta.</p>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.6"/><path d="M12 4v3.4M12 16.6V20M4 12h3.4M16.6 12H20M6.3 6.3l2.4 2.4M15.3 15.3l2.4 2.4M6.3 17.7l2.4-2.4M15.3 8.7l2.4-2.4"/></svg>
+              </div>
+              <h3>Alinhamento e Balanceamento</h3>
+              <p>Direção estável e pneus com desgaste uniforme, para mais segurança e economia.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 6.5 6 11a6 6 0 1 1-12 0c0-4.5 6-11 6-11Z"/></svg>
+              </div>
+              <h3>Troca de Óleo e Filtros</h3>
+              <p>Óleo e filtros de qualidade para manter o motor protegido e rodando bem.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.8"/><path d="M12 3v3.4M12 17.6V21M3 12h3.4M17.6 12H21"/></svg>
+              </div>
+              <h3>Freios</h3>
+              <p>Pastilhas, discos e fluido revisados para garantir a sua frenagem com segurança.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20 8 8l3 8 2-12 3 8 2-4 2 6"/></svg>
+              </div>
+              <h3>Suspensão</h3>
+              <p>Amortecedores e componentes avaliados para conforto e estabilidade na estrada.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 21h10M9 17v4M15 17v4"/><path d="M7 9h4M7 12h6"/></svg>
+              </div>
+              <h3>Diagnóstico Eletrônico</h3>
+              <p>Scanner automotivo para identificar falhas com precisão antes de qualquer serviço.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11M2 12h20M6 3.5 12 8l6-4.5M6 20.5 12 16l6 4.5"/></svg>
+              </div>
+              <h3>Ar-condicionado</h3>
+              <p>Higienização e recarga de gás para viajar sempre com o clima ideal.</p>
+            </article>
+          </div>
+
+          <div class="promo-banner">
+            <div class="promo-text">
+              <h3>Parcele sua manutenção</h3>
+              <p>Em até <strong>12x sem juros</strong> no cartão de crédito.</p>
+            </div>
+            <a href="#contato" class="btn btn-primary">Fale com a gente</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <div class="container">
+          <p class="eyebrow center">Fale com a gente</p>
+          <h2>Entre em contato</h2>
+          <p class="section-sub">Escolha o canal que preferir, estamos prontos para ajudar.</p>
+          <div class="contact-grid">
+            <a href="#localizacao" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+              </div>
+              <h3>Visite nossa loja</h3>
+              <p>Veja o endereço e como chegar até a gente.</p>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.55.45-1 1-1H16V8Z"/></svg>
+              </div>
+              <h3>Facebook</h3>
+              <p>Fale com a gente e acompanhe nossas novidades.</p>
+            </a>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 19 3 21l1-4a8 8 0 1 1 3.5 3.2L6 21"/><path d="M8.5 9.5c0 3 2.5 5.5 5.5 5.5.5 0 1.2-.2 1.4-.7l.3-1-2-1-.7.7c-.9-.4-1.8-1.3-2.2-2.2l.7-.7-1-2-1 .3c-.5.2-.7.9-.7 1.4Z"/></svg>
+              </div>
+              <h3>WhatsApp</h3>
+              <p>(xx) xxxx-xxxx — atendimento rápido pelo chat.</p>
+            </a>
+            <a href="tel:+5500000000000" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5c0-.6.4-1 1-1h3l2 5-2 1.5a11 11 0 0 0 5.5 5.5L15 15l5 2v3c0 .6-.4 1-1 1C10.5 21 3 13.5 3 5"/></svg>
+              </div>
+              <h3>Telefone</h3>
+              <p>(xx) xxxx-xxxx — ligue e agende seu horário.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="localizacao" class="location">
+        <div class="container">
+          <p class="eyebrow center">Onde estamos</p>
+          <h2>Localização</h2>
+          <p class="section-sub">Venha nos visitar, estamos esperando por você.</p>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14852.788472752203!2d-47.0030445!3d-21.4607809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7b84bda508b6f%3A0xa7393093d0eb0c9d!2sDe%20Pauli%20Centro%20Automotivo!5e0!3m2!1sen!2sbr!4v1676859434860!5m2!1sen!2sbr"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da De Pauli Centro Automotivo"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> De Pauli Centro Automotivo. Todos os direitos reservados.</p>
+        <div class="footer-credit">
+          <span>Feito com ❤️ por Thiago de Pauli</span>
+          <a href="https://github.com/Float07" target="_blank" rel="noopener" aria-label="GitHub de Thiago de Pauli">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.7-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.71 1.03 1.6 1.03 2.7 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
