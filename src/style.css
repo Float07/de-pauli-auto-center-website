@@ -339,11 +339,11 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    100deg,
-    rgba(10, 10, 11, 0.92) 10%,
-    rgba(10, 10, 11, 0.72) 45%,
-    rgba(10, 10, 11, 0.4) 100%
+  background: radial-gradient(
+    ellipse closest-side at center,
+    rgba(10, 10, 11, 0.97) 0%,
+    rgba(10, 10, 11, 0.88) 45%,
+    rgba(10, 10, 11, 0.3) 100%
   );
 }
 
@@ -357,12 +357,14 @@ img {
 
 .hero h1 {
   color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .hero-sub {
   font-size: 19px;
   margin: 20px 0 32px;
   color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
