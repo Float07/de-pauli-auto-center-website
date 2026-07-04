@@ -617,6 +617,76 @@ img {
   box-shadow: none;
 }
 
+/* Testimonials */
+.testimonials {
+  padding: 100px 0;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  position: relative;
+  margin: 0;
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-alt);
+  text-align: left;
+}
+
+.testimonial-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--red-light);
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 14px;
+  color: var(--red);
+}
+
+.testimonial-stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.testimonial-card blockquote {
+  margin: 0 0 18px;
+  padding: 0;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.testimonial-card figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.testimonial-meta {
+  font-size: 13px;
+  color: var(--text);
+}
+
 /* Contact */
 .contact {
   padding: 100px 0;
@@ -788,7 +858,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-grid {
+  .contact-grid,
+  .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -869,7 +940,8 @@ img {
 
   .card-grid,
   .gallery-grid,
-  .contact-grid {
+  .contact-grid,
+  .testimonial-grid {
     grid-template-columns: 1fr;
   }
 

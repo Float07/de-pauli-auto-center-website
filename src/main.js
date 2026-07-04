@@ -131,12 +131,12 @@ if (hoursBadge) {
 
 // Scroll-reveal: fade/slide elements in once as they enter the viewport.
 const revealTargets = document.querySelectorAll(
-  '.card, .gallery-item, .contact-card, .about-figure, .about-text, .promo-banner, .map-frame'
+  '.card, .gallery-item, .testimonial-card, .contact-card, .about-figure, .about-text, .promo-banner, .map-frame'
 )
 
 revealTargets.forEach((el) => el.classList.add('reveal'))
 
-document.querySelectorAll('.card-grid, .gallery-grid, .contact-grid').forEach((grid) => {
+document.querySelectorAll('.card-grid, .gallery-grid, .testimonial-grid, .contact-grid').forEach((grid) => {
   Array.from(grid.children).forEach((child, index) => {
     child.style.setProperty('--reveal-delay', `${index * 70}ms`)
   })
